@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/alibaba.png" alt="shop logo">
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+                <a href="#">Help</a>
+            </nav>
+            <div class="account-section">
+                <a href="#">Account ▼</a>
+                <a href="#">3 items 🛒</a>
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+        </header>
+    
+        <main>
+            <section class="form-section">
+                <div class="progress-bar">
+                    <span class="active">Account  &#x23AF;</span>
+                    <span>Shipping</span>
+                    <span> &#x23AF;&#x23AF; </span>
+                    <span>Payment</span>
+                </div>
+                <h2>Account details</h2>
+                <form>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="Email@myemail.com" value="Email@myemail.com">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="*********" value="*********">
+                    <button type="submit">Login</button>
+                    <button type="button">Register for account</button>
+                </form>
+            </section>
+    
+            <section class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="order-item">
+                    <img src="sony-headphones.jpg" alt="Sony wireless headphones">
+                    <div>
+                        <p>Sony wireless headphones</p>
+                        <p>£320.45</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <label for="discount-code">Gift Card / Discount code</label>
+                <input type="text" id="discount-code" placeholder="Enter code">
+                <button type="button">Apply</button>
+                <div class="pricing-details">
+                    <p>Sub total: £316.55</p>
+                    <p>Tax: £3.45</p>
+                    <p>Shipping: Free</p>
+                    <p>Total: £320.45</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
