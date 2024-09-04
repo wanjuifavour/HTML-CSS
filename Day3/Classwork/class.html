@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .first, .second, .third, .fourth {
+        border: 1px solid blue;
+        width: 100px;
+        height: 100px;
+    }
+    /* .first, .second{
+        align-self: stretch;
+    } */
+    .first{
+        background-color:rgb(85, 30, 39);
+    }
+    .second{
+    background-color: red;
+    }
+    .third{
+        background-color: green;
+    }
+    .fourth{
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+</body>
+</html>

@@ -4,71 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
-    <link rel="stylesheet" href="styles2.css">
 </head>
+<link rel="stylesheet" href="styles2.css">
 <body>
-    <div class="content-wrapper">
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/alibaba.png" alt="shop logo">
-            </div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Contact</a>
-                <a href="#">Help</a>
-            </nav>
-            <div class="account-section">
-                <a href="#">Account ▼</a>
-                <a href="#">3 items 🛒</a>
-                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-            </div>
-        </header>
-    
-        <main>
-            <section class="form-section">
-                <div class="progress-bar">
-                    <span class="active">Account  &#x23AF;</span>
+    <nav class="navbar">
+        <img class="logo" src="./assets/alibaba.png" alt="Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="account">
+            <a href="#">Account▼</a>
+            <a href="#">🛒3 items</a>
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+    </nav>
+
+    <main>
+        <div class="all-left">
+            <section class="section-container">
+                <div class="progress">
+                    <span class="active">Account</span>
+                    <div class="line"></div>
+                    <img class="check-icon" src="./assets/check-mark.webp" alt="icon">
+                    <div class="line"></div>
                     <span>Shipping</span>
-                    <span> &#x23AF;&#x23AF; </span>
+                    <div class="line"></div>
+                    <img class="check-icon" src="./assets/check-mark.webp" alt="icon">
+                    <div class="line"></div>
                     <span>Payment</span>
                 </div>
-                <h2>Account details</h2>
-                <form>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" placeholder="Email@myemail.com" value="Email@myemail.com">
+                <h2>Account Details</h2>
+                <form action="">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" value="Email@myemail.com">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="*********" value="*********">
-                    <button type="submit">Login</button>
-                    <button type="button">Register for account</button>
+                    <input type="password" id="password" value="********">
                 </form>
-            </section>
-    
-            <section class="order-summary">
-                <h3>Order Summary</h3>
-                <div class="order-item">
-                    <img src="sony-headphones.jpg" alt="Sony wireless headphones">
-                    <div>
-                        <p>Sony wireless headphones</p>
-                        <p>£320.45</p>
-                    </div>
-                    <div class="quantity-controls">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-                <label for="discount-code">Gift Card / Discount code</label>
-                <input type="text" id="discount-code" placeholder="Enter code">
-                <button type="button">Apply</button>
-                <div class="pricing-details">
-                    <p>Sub total: £316.55</p>
-                    <p>Tax: £3.45</p>
-                    <p>Shipping: Free</p>
-                    <p>Total: £320.45</p>
+                <div class="login">
+                    <a href="#">Register for account</a>
+                    <button class="btn-primary" type="button">Login</button>
                 </div>
             </section>
-        </main>
-    </div>
+            <div class="shipping-details">
+                <a href="#">Cancel order</a>
+                <button class="btn-primary" type="button">Shipping details</button>
+            </div>
+        </div> 
+
+        <div class="all-right">
+            <h2>Order Summary</h2>
+            <img class="headphones" src="./assets/headphones.jpg" alt="product image">
+            <div class="item-count">
+                <div class="details">
+                    <h2>Sony Wireless headphones</h2>
+                    <h2 id="price">$320.45</h2>
+                </div>
+                <div class="add-sub">
+                    <button>-</button>
+                    <p>1</p>
+                    <button>+</button>
+                </div>
+            </div>
+            <div>
+                <div class="discount">
+                    <form action="">
+                        <label for="discount">Gift Card / Discount Code</label>
+                        <input type="discount" name="discount" id="discount">
+                    </form>
+                    <button class="btn-apply" type="button">Apply</button>
+                </div>
+                <ul class="summary">
+                    <li>Sub total <span>$316.55</span></li>
+                    <li>Tax <span>$3.45</span></li>
+                    <li>Shipping <span>Free</span></li>
+                    <li class="amount">Total <span>$320.45</span></li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
 </body>
 </html>
