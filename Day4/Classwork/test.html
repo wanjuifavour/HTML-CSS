@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code for testing things</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        border: 1px solid black;
+        margin: auto;
+}
+</style>
+<body>
+    <div class="container">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+  </div></body>
+</html>
+
+<!--
+ For this test code, I wanted to see how the grid would behave if I had a container using grid property inside a body with flex display property. 
+ I wanted to see if the items would be placed in the columns or if they would be placed in the rows.
+ I also wanted to see if the items would be placed in the center of the container.
+ I also wanted to see if the container would be centered in the body.(This was the main part as it is part of task1)
+-->
